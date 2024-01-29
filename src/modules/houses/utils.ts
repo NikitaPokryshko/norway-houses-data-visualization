@@ -1,5 +1,6 @@
 import { YEARS_WITH_QUARTERS } from "../../common/constants/date";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const parsedChartData = (responseData: any) => {
   return {
     categories: Object.values(responseData.dimension.Tid.category.label),

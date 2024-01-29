@@ -42,6 +42,7 @@ const getRequestBody = ({ houseType, selectedRange }: RequestBodyDynamicValues) 
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const fetchPrices = async ({houseType = "00", selectedRange = []}): Promise<any> => {
   try {
     const response = await fetch(`${URL}`, {
