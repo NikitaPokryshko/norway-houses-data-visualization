@@ -7,13 +7,13 @@ const Select = ({ options, onChange, value, disabledMap = {} }) => {
 
   return (
     <select
-      name="from"
-      autoComplete="from"
-      className="mt-1 mx-1 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+      name='from'
+      autoComplete='from'
+      className='cursor-pointer mt-1 mx-1 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm md:pe-8 py-1' // Added pr-8 for padding on the right
       onChange={handleChange}
       value={value}
     >
-      {options.map(opt => (
+      {options.map((opt) => (
         <option
           key={opt.value}
           value={opt.value}
@@ -26,4 +26,4 @@ const Select = ({ options, onChange, value, disabledMap = {} }) => {
   )
 }
 
-export default Select;
+export default Select

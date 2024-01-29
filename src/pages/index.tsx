@@ -5,12 +5,10 @@ import { useEffect } from 'react'
 import Houses from '../modules/houses/Houses'
 import useStorage from '../common/hooks/useStorage'
 
-import styles from '../styles/Home.module.scss'
-
 const Home: NextPage = () => {
   const router = useRouter()
 
-  const { getItem, setItem } = useStorage();
+  const { getItem, setItem } = useStorage()
 
   useEffect(() => {
     if (window.location.search) {
@@ -25,7 +23,7 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <div className={styles.container}>
+    <div className='container mx-auto max-w-4xl my-12'>
       <Houses />
     </div>
   )
