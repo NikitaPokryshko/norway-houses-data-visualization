@@ -1,5 +1,3 @@
-import * as Highcharts from "highcharts";
-
 const HOUSE_TYPE_OPTIONS = [
   {
     value: '00',
@@ -32,7 +30,8 @@ const CHART_TYPE_OPTIONS = [
 ];
 
 
-const CHART_OPTIONS: Highcharts.Options = {
+// const CHART_OPTIONS: Highcharts.Options = {
+const CHART_OPTIONS = {
   chart: {
     type: CHART_TYPES.LINE,
   },
